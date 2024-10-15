@@ -28,7 +28,7 @@ numeros_ej1 = st.text_input("Ingresa 10 numeros separados por comas: ", "12, 7, 
 
 if st.button("Ejecutar Ejercicio 4"):
     #Convertir la cadena de entrada a una lista de numeros
-    lista_numeros = {int(num) for num in numeros_ej1.split(",")}
+    lista_numeros = [int(num) for num in numeros_ej1.split(",")]
     media = sum(lista_numeros) / len(lista_numeros)
     mayores = len({num for num in lista_numeros if num > 10})
     iguales = len({num for num in lista_numeros if num == 10})
