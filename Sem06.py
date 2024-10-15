@@ -19,3 +19,22 @@ num = st.number_input("Ingrese un numero para ver su tabla de multiplicar del 1 
 if st.button("Ejecutar Ejercicio 3"):
     for i in range (1, 13):
         st.write(f"{num} x {i} = {num*i}")
+
+##########################################################################
+
+#Ejercicio 4: Calcular la media y comparar con 10
+st.subheader("Ejercicio 4: Comparar 10 numeros con el valor 10")
+numeros_ej1 = st.text_input("Ingresa 10 numeros separados por comas: ", "12, 7, 15, 10, 20, 5, 11, 18, 3, 8")
+
+if st.button("Ejecutar Ejercicio 4"):
+    #Convertir la cadena de entrada a una lista de numeros
+    lista_numeros = {int(num) for num in numeros_ej1.split(",")}
+    media = sum(lista_numeros)/ len(lista_numeros)
+    mayores = len({num for num in lista_numeros if num >10})
+    iguales = len({num for num in lista_numeros if num ==10})
+    menores = len({num for num in lista_numeros if num <10})
+
+    st.write(f"La media es: {media}")
+    st.write(f"Mayores que 10: {mayores}")
+    st.write(f"Iguales a 10: {iguales}")
+    st.write(f"Menores que 10: {menores}")
