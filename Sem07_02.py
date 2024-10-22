@@ -14,7 +14,7 @@ def verificar_automoviles():
     #Boton para registrar el automovil 
     if st.button("Registrar automovil"):
         st.session_state.puntos_contaminantes.append(puntos)
-        st.success(f"Automovil registrado con {puntos: .2f} puntos contaminantes.")
+        st.success(f"Automovil registrado con {puntos} puntos contaminantes.")
 
     #Mostrar los datos registrados hasta el momento
     if len(st.session_state.puntos_contaminantes) > 0 and st.button("Calcular resultados"):
