@@ -14,7 +14,7 @@ def verificar_automoviles():
     #Boton para registrar el automovil 
     if st.button("Registrar automovil"):
         st.session_state.puntos_contaminantes.append(puntos)
-        st.success(f"Automovil registrado con {puntos} puntos contaminantes.")
+        st.success(f"Automovil registrado con {puntos: .2f} puntos contaminantes.")
 
     #Mostrar los datos registrados hasta el momento
     if len(st.session_state.puntos_contaminantes) > 0 and st.button("Calcular resultados"):
@@ -23,13 +23,13 @@ def verificar_automoviles():
         mas_contaminacion = max(st.session_state.puntos_contaminantes)
 
         #Mostrar los resultados
-        st.write(f"Promedio de puntos contaminantes: {promedio: 2f}")
-        st.write(f"El automovil que menos contamino tiene {menos_contaminacion: 2f}")
-        st.write(f"El automovil que mas contamino tiene {mas_contaminacion: 2f}")
+        st.write(f"Promedio de puntos contaminantes: {promedio: .2f}")
+        st.write(f"El automovil que menos contamino tiene {menos_contaminacion: .2f}")
+        st.write(f"El automovil que mas contamino tiene {mas_contaminacion: .2f}")
 
     #Mostrar para reiniciar los datos
     if st.button("Reiniciar Datos"):
-        se.session_state.puntos_contaminantes = []
+        st.session_state.puntos_contaminantes = []
         st.success("Datos reiniciados correctamemte")
     
 #Ejecutar la funcion
