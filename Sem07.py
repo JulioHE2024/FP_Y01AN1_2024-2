@@ -20,4 +20,4 @@ def mostrar_menu():
             st.write("¡Saliendo del Menú!")
             break
 
-if__name___=="__main__"
+if__name__=="__main__"
