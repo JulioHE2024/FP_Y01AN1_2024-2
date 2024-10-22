@@ -18,6 +18,6 @@ def mostrar_menu():
         elif seleccion == "Salir":
             st.write("¡Saliendo del Menú!")
             break
-            
-if __name__=="__main__"
+
+if __name__=="__main__":
     mostrar_menu()
