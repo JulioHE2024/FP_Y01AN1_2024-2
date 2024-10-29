@@ -29,8 +29,8 @@ def main():
     operacion = st.selectbox("Operacion", ("Suma", "Resta", "Multiplicacion", "Division"))
 
     #Entradas para los numeros
-    num1 = st.tex_input("Numero 1")
-    num2 = st.tex_input("Numero 2")
+    num1 = st.text_input("Numero 1")
+    num2 = st.text_input("Numero 2")
 
     #Boton para calcular
     if st.button("Calcular"):
@@ -39,4 +39,5 @@ def main():
 
 if __name__=="__main__":
     main()
+
 
