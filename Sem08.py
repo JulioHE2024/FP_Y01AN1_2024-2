@@ -39,7 +39,9 @@ def main():
             st.write("**-Kilometraje:**", kilometraje,"Km")
 
     if st.button("Reiniciar Formulario"):
-            reset_form()
+            st.session_state.marca = []
+            st.session_state.modelo = []
+            st.session_state.kilometraje = []
             st.success("Datos reiniciados correctamente")
 
 if __name__=="__main__":
