@@ -14,9 +14,9 @@ def validate_data(marca, modelo, kilometraje):
 
 def reset_form():
     """Reinicia todos los campos del formulario"""
-    st.session_state.marca = " "
-    st.session_state.modelo = " "
-    st.session_state.kilometraje = " "
+    st.session_state.marca = ""
+    st.session_state.modelo = ""
+    st.session_state.kilometraje = ""
 
 def main():
     st.title("REGISTRO DE AUTOMOVIL")
