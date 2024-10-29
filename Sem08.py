@@ -39,8 +39,8 @@ def main():
             st.write("**-Kilometraje:**", kilometraje,"Km")
 
     if st.button("Reiniciar Formulario"):
-            reset_form()
-            st.success("Datos reiniciados correctamente")
+        reset_form()
+        st.success("Datos reiniciados correctamente")
 
 if __name__=="__main__":
     main()
