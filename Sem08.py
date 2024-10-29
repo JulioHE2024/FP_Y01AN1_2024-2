@@ -40,6 +40,7 @@ def main():
 
     if st.button("Reiniciar Formulario"):
             reset_form()
+            st.rerun()
             st.success("Datos reiniciados correctamente")
 
 if __name__=="__main__":
