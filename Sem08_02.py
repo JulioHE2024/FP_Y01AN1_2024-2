@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_card import card
 
 def calcular(operacion, num1, num2):
     """Realiza la operacion especificada entre num1 y num2"""
@@ -36,8 +35,7 @@ def main():
     #Boton para calcular
     if st.button("Calcular"):
         resultado = calcular(operacion, num1, num2)
-        with st.container():
-            st.write("**El resultado es:**", resultado)
+        st.write("**El resultado es:**", resultado)
 
 if __name__=="__main__":
     main()
