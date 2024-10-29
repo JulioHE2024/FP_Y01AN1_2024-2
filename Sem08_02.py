@@ -23,7 +23,7 @@ def calcular(operacion, num1, num2):
     
 def main():
     st.title("CALCULADORA BASICA")
-    st.write("Seleccione la operacion e ingrese los numeros")
+    st.write("Seleccione la operacion e ingrese los numeros:")
 
     #Seleccione la operacion
     operacion = st.selectbox("Operacion", ("Suma", "Resta", "Multiplicacion", "Division"))
@@ -35,7 +35,7 @@ def main():
     #Boton para calcular
     if st.button("Calcular"):
         resultado = calcular(operacion, num1, num2)
-        st.write("**Resultado**", resultado)
+        st.write("**El resultado es**", resultado)
 
 if __name__=="__main__":
     main()
