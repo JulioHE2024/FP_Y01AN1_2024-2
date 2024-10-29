@@ -26,7 +26,7 @@ def main():
     st.write("Seleccione la operacion e ingrese los numeros")
 
     #Seleccione la operacion
-    operacion = st.selectbox("Suma", "Resta", "Multiplicacion", "Division")
+    operacion = st.selectbox("Operacion", ("Suma", "Resta", "Multiplicacion", "Division"))
 
     #Entradas para los numeros
     num1 = st.tex_input("Numero 1")
