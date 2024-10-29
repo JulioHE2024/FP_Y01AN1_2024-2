@@ -33,7 +33,7 @@ def main():
     num2 = st.tex_input("Numero 2")
 
     #Boton para calcular
-    if st.button("Calcular")
+    if st.button("Calcular"):
         resultado = calcular(operacion, num1, num2)
         st.write("**Resultado**", resultado)
 
