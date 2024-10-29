@@ -30,7 +30,7 @@ def main():
 
     #Entradas para los numeros
     num1 = st.text_input("Ingrese numero 01:")
-    num2 = st.text_input("Ingrese numero 02.")
+    num2 = st.text_input("Ingrese numero 02:")
 
     #Boton para calcular
     if st.button("Calcular"):
