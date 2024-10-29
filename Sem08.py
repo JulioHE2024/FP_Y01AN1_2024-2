@@ -13,7 +13,7 @@ def validate_data(marca, modelo, kilometraje):
     return None 
 
 def main():
-    st.title("Registro de Automovil")
+    st.title("REGISTRO DE AUTOMOVIL")
     st.write("Ingrese los datos del Automovil: ")
 
     #Registro por el ususario
@@ -28,9 +28,9 @@ def main():
             st.error(error)
         else:
             st.success("Automovil registrado exitosamente")
-            st.write("**Marca:**", marca)
-            st.write("**Modelo:**", modelo)
-            st.write("**Kilometraje:**", kilometraje)
+            st.write("**-Marca:**", marca)
+            st.write("**-Modelo:**", modelo)
+            st.write("**-Kilometraje:**", kilometraje)
 
 if __name__=="__main__":
     main()
