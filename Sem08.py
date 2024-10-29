@@ -21,7 +21,7 @@ def main():
     modelo = st.text_input("Modelo del automovil")
     kilometraje = st.text_input("Kilometraje del automovil")
 
-    if st.button("Registrar Datos")
+    if st.button("Registrar Datos"):
         #Validacion de los datos
         error = validate_data(marca, modelo, kilometraje)
         if error:
