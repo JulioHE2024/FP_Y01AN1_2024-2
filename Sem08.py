@@ -12,6 +12,12 @@ def validate_data(marca, modelo, kilometraje):
         return "El kilometraje debe ser un numero valido"
     return None 
 
+def reset_form():
+    """Reinicia todos los campos del formulario"""
+    st.session_state.marca = ""
+    st.session_state.modelo = ""
+    st.session_state.kilometraje = ""
+
 def main():
     st.title("REGISTRO DE AUTOMOVIL")
     st.write("Ingrese los datos del Automovil: ")
@@ -31,6 +37,10 @@ def main():
             st.write("**-Marca:**", marca)
             st.write("**-Modelo:**", modelo)
             st.write("**-Kilometraje:**", kilometraje,"Km")
+
+    if st.button("Reiniciar Formulario"):
+            reset_form()
+            st.success("Datos reiniciados correctamente")
 
 if __name__=="__main__":
     main()
