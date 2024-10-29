@@ -35,7 +35,7 @@ def main():
     #Boton para calcular
     if st.button("Calcular"):
         resultado = calcular(operacion, num1, num2)
-        st.write("**El resultado es**", resultado)
+        st.write("**El resultado es:**", resultado)
 
 if __name__=="__main__":
     main()
