@@ -1,0 +1,42 @@
+import streamlit as st
+
+def calcular(operacion, num1, num2):
+    """Realiza la operacion especificada entre num1 y num2"""
+    try:
+        num1 = float(num1)
+        num2 = float(num2)
+    except ValueError:
+        return "Por favor, ingrese numeros validos"
+
+    if operacion == "Suma":
+        return num1+num2
+    elif operacion == "Resta":
+        return num1-num2
+    elif operacion == "Multiplicacion":
+        return num1*num2
+    elif operacion == "Division":
+        if num2 == 0:
+            return "Error: No se puede dividir entre 0"
+        return num1/num2
+    else:
+        return "Operacion no valida"
+    
+def main():
+    st.title("CALCULADORA BASICA")
+    st.write("Seleccione la operacion e ingrese los numeros")
+
+    #Seleccione la operacion
+    operacion = st.selectbox("Suma", "Resta", "Multiplicacion", "Division")
+
+    #Entradas para los numeros
+    num1 = st.tex_input("Numero 1")
+    num2 = st.tex_input("Numero 2")
+
+    #Boton para calcular
+    if st.button("Calcular")
+        resultado = calcular(operacion, num1, num2)
+        st.write("**Resultado**", resultado)
+
+if __name__=="__main__":
+    main()
+
