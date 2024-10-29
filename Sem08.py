@@ -14,7 +14,7 @@ def validate_data(marca, modelo, kilometraje):
 
 def main():
     st.title("Registro de Automovil")
-    sT.write("Ingrese los datos del Automovil: ")
+    st.write("Ingrese los datos del Automovil: ")
 
     #Registro por el ususario
     marca =st.text_input("Marca del automovil")
